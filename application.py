@@ -5,4 +5,5 @@ application = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
-application.run()
+if __name__=="__main__":
+    application.run()
